@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExploreRazorPages", "Explor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicRazorPages", "BasicRazorPages\BasicRazorPages.csproj", "{39163C69-BA50-4518-9407-F605D12E5D9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrateFromControllers", "MigrateFromControllers\MigrateFromControllers.csproj", "{788D9812-F1C5-481A-B618-D3C24E5EAAD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{39163C69-BA50-4518-9407-F605D12E5D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39163C69-BA50-4518-9407-F605D12E5D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39163C69-BA50-4518-9407-F605D12E5D9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788D9812-F1C5-481A-B618-D3C24E5EAAD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788D9812-F1C5-481A-B618-D3C24E5EAAD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788D9812-F1C5-481A-B618-D3C24E5EAAD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788D9812-F1C5-481A-B618-D3C24E5EAAD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

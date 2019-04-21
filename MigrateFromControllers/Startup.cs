@@ -10,9 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace BasicRazorPages
+namespace MigrateFromControllers
 {
-  // this is the template code for ASP.NET Core 2.2
   public class Startup
   {
     public Startup(IConfiguration configuration)
