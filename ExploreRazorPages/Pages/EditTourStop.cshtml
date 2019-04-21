@@ -1,0 +1,42 @@
+﻿@page "{stopnumber:int?}"
+@model ExploreRazorPages.Pages.EditTourStopModel
+@{
+	ViewData["Title"] = "Edit TourStop";
+}
+
+
+<form method="post" class="col-6" >
+	<div asp-validation-summary="All" class="danger"></div>
+  <div class="form-row">
+    <div class="form-group">
+      <label asp-for="@Model.CurrentTourStop.StopNumber" class="label "></label>
+      <input asp-for="CurrentTourStop.StopNumber" class="form-control" />
+      <span asp-validation-for="CurrentTourStop.StopNumber" class="text-danger" />
+    </div>
+    <div class="px-2">
+      <label asp-for="CurrentTourStop.Name"></label>
+      <input asp-for="CurrentTourStop.Name" class="form-control" />
+      <span asp-validation-for="CurrentTourStop.Name" class="text-danger" />
+    </div>
+  </div>
+	<div>
+		<label asp-for="CurrentTourStop.Description" class="pt-4"></label>
+		<textarea asp-for="CurrentTourStop.Description" class="form-control" ></textarea>
+		<span asp-validation-for="CurrentTourStop.Description" class="text-danger" />
+	</div>
+
+	<div>
+		<label asp-for="CurrentTourStop.EstimatedMinutes" class="pt-4"></label>
+		<input asp-for="CurrentTourStop.EstimatedMinutes" class="form-control" />
+
+	</div>
+	<div>
+		<label asp-for="CurrentTourStop.Phone" class="pt-4"></label>
+		<input asp-for="CurrentTourStop.Phone" class="form-control" />
+		<span asp-validation-for="CurrentTourStop.Phone" class="text-danger" />
+	</div>
+	
+		<button class="btn btn-primary mt-3" type="submit">Update</button>
+	
+</form>
+
