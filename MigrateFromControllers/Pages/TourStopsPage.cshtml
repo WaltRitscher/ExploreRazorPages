@@ -1,0 +1,20 @@
+﻿@page
+@model TourStopsPageModel
+@{
+}
+
+
+
+<h1>Tour Stops - Page</h1>
+
+<table class="table table-striped table-bordered table-condensed">
+  @foreach (var item in Model.TourStops)
+  {
+    <tr>
+      <td>@item.StopNumber</td>
+      <td><b>@item.Name  </b>    </td>
+      <td>@item.Description      </td>
+    </tr>
+  }
+
+</table>

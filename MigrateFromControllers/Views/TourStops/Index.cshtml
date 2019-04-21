@@ -1,0 +1,19 @@
+﻿@model List<TailorMadeTours.Models.TourStop>
+
+<h1>TourStops</h1>
+
+<table class="table table-striped table-bordered ">
+  <thead><tr><th>Stop Number</th>
+             <th>Name</th>
+             <th>Description</th></tr>
+  </thead>
+  @foreach (var item in Model)
+  {
+    <tr>
+      <td>@item.StopNumber</td>
+      <td><b>@item.Name  </b>    </td>
+      <td>@item.Description      </td>
+    </tr>
+  }
+
+</table>

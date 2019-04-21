@@ -53,7 +53,11 @@ namespace MigrateFromControllers
       app.UseStaticFiles();
       app.UseCookiePolicy();
 
-      app.UseMvc();
+      // modify this MVC to use route for controller
+      app.UseMvc(routes =>
+      {
+        routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+      });
     }
   }
 }
