@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace TailorMadeTours.Models {
 	public class TourStop {
     [Required]
-    [Display(Name = "Stop Number")]
+    [Display(Name = "Stop Number"), Key]
     public int StopNumber { get; set; }
 		public string Name { get; set; }
 		public string Latitude { get; set; }
@@ -22,6 +22,7 @@ namespace TailorMadeTours.Models {
 
 	}
 	public class BusyTime {
+    [Key]
 		public int Hour { get; set; }
 		public int Rank { get; set; }
 
