@@ -6,3 +6,48 @@
 
 <h1>Screenshots</h1>
 
+<form>
+
+    @* use HTML Helper. It is implemented as code *@
+    @Html.TextBoxFor(m => Model.CurrentTourStop.Name)
+
+    @* the generated HTML markup looks like this *@
+    <input class="form-control" id="Name" name="Name" type="text" value="">
+
+
+    @* what if you want to add special attributes,
+        styles, bootstrap states etc. ? *@
+
+    @* use a markup style approach *@ 
+    <input asp-for="@Model.CurrentTourStop.Name" placeholder="Enter Name"
+           class="form-control has-error" style="background-color:#cccccc;" /> 
+    @* versus *@
+    @Html.TextBoxFor(m => Model.CurrentTourStop.Name,
+    new
+        {
+            @class = "form-control has-error",
+            placeholder = "Enter Name",
+            style = "background-color:#cccccc;"
+        })
+
+    @* A better approach is to create special tags
+        that are meaningful to Razor a
+        and can be converted to real HTML
+        or instructions to Razor compiler *@
+    <environment></environment>
+    <cache></cache>
+    <partial></partial>
+
+
+
+</form>
+
+@* Tag helpers also modify and extend
+    tag attributes *@
+<form asp-action="">
+    <a href="#" asp-page="" asp-route="" />
+    <input asp-for="@Model.CurrentTourStop.Latitude" />
+    <img asp-append-version="true" />
+</form>
+
+

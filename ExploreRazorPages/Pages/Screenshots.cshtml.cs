@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using TailorMadeTours.Models;
 
 namespace ExploreRazorPages.Pages
 {
@@ -13,5 +14,6 @@ namespace ExploreRazorPages.Pages
         {
 
         }
+        public TourStop CurrentTourStop { get; set; }
     }
 }
