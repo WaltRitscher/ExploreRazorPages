@@ -8,24 +8,24 @@ using TailorMadeTours.Models;
 
 namespace ExploreRazorPages.Pages
 {
-  public class DatabindWithRouteParamModel : PageModel
-  {
-    public void OnGet(int stopNumber)
-    {
-      CurrentTourStop = new TailorMadeTours.Models.TourSource().TourStops.ElementAt(stopNumber - 1);
+	public class DatabindWithRouteParamModel : PageModel
+	{
+		public void OnGet(int stopNumber)
+		{
+			//CurrentTourStop = new TailorMadeTours.Models.TourSource().TourStops.ElementAt(stopNumber - 1);
+			CurrentTourStop = new TailorMadeTours.Models.TourSource().TourStops.FirstOrDefault(x => x.StopNumber);
+		}
 
-    }
-
-    // use TempData property to pass data between pages
-    // Properties marked with TempData
-    // attribute with are stored in encrypted cookie
-    // When the data is read from the cookie, it is deleted.
-    [TempData]
-    public string Message { get; set; }
+		// use TempData property to pass data between pages
+		// Properties marked with TempData
+		// attribute with are stored in encrypted cookie
+		// When the data is read from the cookie, it is deleted.
+		[TempData]
+		public string Message { get; set; }
 
 
-    public bool ShouldShowMessage => !String.IsNullOrEmpty(Message);
-    [BindProperty]
-    public TourStop CurrentTourStop { get; set; }
-  }
+		public bool ShouldShowMessage => !String.IsNullOrEmpty(Message);
+		[BindProperty]
+		public TourStop CurrentTourStop { get; set; }
+	}
 }

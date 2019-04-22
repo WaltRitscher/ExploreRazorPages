@@ -12,9 +12,9 @@ namespace ExploreRazorPages.Pages
   {
     public void OnGet(int stopNumber)
     {
-      CurrentTourStop = new TailorMadeTours.Models.TourSource().TourStops.ElementAt(stopNumber - 1);
-
-    }
+      // CurrentTourStop = new TailorMadeTours.Models.TourSource().TourStops.ElementAt(stopNumber - 1);
+			CurrentTourStop = new TailorMadeTours.Models.TourSource().TourStops.FirstOrDefault(x => x.StopNumber);
+		}
 
 
     public IActionResult OnPost()
