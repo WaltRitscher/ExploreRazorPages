@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicRazorPages", "BasicRaz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigrateFromControllers", "MigrateFromControllers\MigrateFromControllers.csproj", "{788D9812-F1C5-481A-B618-D3C24E5EAAD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMvc", "BasicMvc\BasicMvc.csproj", "{A1EF7C01-9F47-4109-ABBC-D2A5E1739E93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{788D9812-F1C5-481A-B618-D3C24E5EAAD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{788D9812-F1C5-481A-B618-D3C24E5EAAD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{788D9812-F1C5-481A-B618-D3C24E5EAAD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1EF7C01-9F47-4109-ABBC-D2A5E1739E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1EF7C01-9F47-4109-ABBC-D2A5E1739E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1EF7C01-9F47-4109-ABBC-D2A5E1739E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1EF7C01-9F47-4109-ABBC-D2A5E1739E93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

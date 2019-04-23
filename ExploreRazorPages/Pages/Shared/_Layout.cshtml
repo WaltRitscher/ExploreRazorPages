@@ -54,16 +54,17 @@
 								<div class="dropdown-header text-primary">Dependency Injection</div>
 								<a class="dropdown-item" asp-page="/DI/AllTourStopsDI">DI in code behind</a>
 								<a class="dropdown-item" asp-page="/DI/AllTourStopsDI2">DI in Page markup</a>
+								<a class="dropdown-item" asp-page="/DI/AllTestimonials">DI a service</a>
 								<div class="dropdown-divider"></div>
 								<div class="dropdown-header text-primary">Model Binding</div>
-								
+
 								<div class="dropdown-header text-primary">Other</div>
 								<a class="dropdown-item" asp-page="/#">Pass data between Pages with TempData</a>
-								<a class="dropdown-item" asp-page="/#">Multiple Forms on a page</a>
+								@*<a class="dropdown-item" asp-page="/#">Multiple Forms on a page</a>*@
 								<div class="dropdown-divider"></div>
 								<div class="dropdown-header text-primary">Partial Content</div>
 								<a class="dropdown-item" asp-page="/#">Partial Tag Helper</a>
-								<a class="dropdown-item" asp-page="">View Components</a>
+								@*<a class="dropdown-item" asp-page="">View Components</a>*@
 
 							</div>
 						</li>
@@ -75,7 +76,7 @@
 	</header>
 
 	<div class="container">
-		
+
 		<main role="main" class="pb-3">
 			@RenderBody()
 		</main>

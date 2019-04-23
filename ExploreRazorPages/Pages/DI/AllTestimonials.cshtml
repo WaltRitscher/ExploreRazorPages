@@ -1,0 +1,24 @@
+﻿@page
+@model ExploreRazorPages.Pages.DI.AllTestimonialsModel
+@{
+	ViewData["Title"] = "AllTestimonials";
+}
+
+<h1>AllTestimonials</h1>
+
+<h1>All Tour Stops</h1>
+
+<table class="table table-striped table-bordered table-condensed">
+	@foreach (var item in Model.Testimonials)
+	{
+		<tr>
+			<td>@item.ID</td>
+			<td><b>@item.Customer </b>    </td>
+			<td>@item.Comment      </td>
+			<td>
+				
+			</td>
+		</tr>
+	}
+
+</table>
