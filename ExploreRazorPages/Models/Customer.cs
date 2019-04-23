@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ExploreRazorPages.Models
+namespace TailorMadeTours.Models
 {
 	public class Customer
 	{
@@ -19,5 +19,7 @@ namespace ExploreRazorPages.Models
 		public bool IsActive { get; set; }
 		[MinLength(12)]
 		public string Notes { get; set; }
+		
+		public String	 AdminNotes { get; set; }
 	}
 }
