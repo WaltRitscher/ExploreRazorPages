@@ -9,9 +9,9 @@ namespace ExploreRazorPages.Pages
 {
   public class AllTourStopsDIModel : PageModel
   {
-    private TailorMadeTours.Models.ApiContext _db;
+    private TailorMadeTours.Models.ToursDbContext _db;
 
-    public AllTourStopsDIModel(TailorMadeTours.Models.ApiContext db)
+    public AllTourStopsDIModel(TailorMadeTours.Models.ToursDbContext db)
     {
       _db = db;
     }

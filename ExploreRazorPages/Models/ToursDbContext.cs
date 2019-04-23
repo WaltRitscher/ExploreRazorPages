@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TailorMadeTours.Models
 {
-  public class ApiContext : DbContext
+  public class ToursDbContext : DbContext
   {
-    public ApiContext(DbContextOptions<ApiContext> options)
+    public ToursDbContext(DbContextOptions<ToursDbContext> options)
         : base(options)
     {
       this.TourStops = new TourSource().TourStops;

@@ -9,16 +9,16 @@ namespace ExploreRazorPages.Pages
 {
     public class AllTourStopsDI2Model : PageModel
     {
-		private TailorMadeTours.Models.ApiContext _db;
+		
 
-		public AllTourStopsDI2Model(TailorMadeTours.Models.ApiContext db)
+		public AllTourStopsDI2Model(TailorMadeTours.Models.ToursDbContext db)
 		{
-			_db = db;
+			
 		}
 		public void OnGet()
 		{
-			TourStops = _db.TourStops;
+			
 		}
-		public List<TailorMadeTours.Models.TourStop> TourStops { get; set; }
+		
 	}
 }

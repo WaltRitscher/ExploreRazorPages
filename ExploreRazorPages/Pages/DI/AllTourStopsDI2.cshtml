@@ -1,11 +1,12 @@
 ﻿@page
 @model AllTourStopsDI2Model
+@inject TailorMadeTours.Models.ToursDbContext db
 @{
 }
 
-<h1>All TourStops DI 2</h1>
+<h1>TourStops DI - in markup</h1>
 <div class="card-columns">
-	@foreach (var item in Model.TourStops)
+	@foreach (var item in db.TourStops)
 	{
 		<div class="card shadow" style="width:23vw">
 			<img class="card-img-top" style="width:100%;height:15vw;object-fit:cover" src="@Url.Content(item.ImageUri)" alt="Card image">

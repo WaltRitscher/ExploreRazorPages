@@ -33,7 +33,7 @@ namespace ExploreRazorPages
       });
 
       // add our custom data context 
-      services.AddDbContext<TailorMadeTours.Models.ApiContext>(opt => opt.UseInMemoryDatabase("FastFocusRazorPages"));
+      services.AddDbContext<TailorMadeTours.Models.ToursDbContext>(opt => opt.UseInMemoryDatabase("FastFocusRazorPages"));
       services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
     }
 
