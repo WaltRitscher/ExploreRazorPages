@@ -14,6 +14,7 @@ namespace TailorMadeTours.Models {
 		public string Latitude { get; set; }
 		public string Longitude { get; set; }
 		public string Description { get; set; }
+		[Phone]
 		public string Phone { get; set; }
 		public string ImageUri { get; set; }
 		public List<BusyTime> BusyTimes { get; set; }
