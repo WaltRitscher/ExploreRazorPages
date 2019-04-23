@@ -14,7 +14,9 @@
 
 
   <ItemGroup>
-    <Folder Include="Pages\HandlerMethods\" />
+    <Content Update="Pages\HandlerMethods\HandlerExamples.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
   </ItemGroup>
 
 </Project>

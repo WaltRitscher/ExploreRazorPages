@@ -20,7 +20,7 @@ namespace ExploreRazorPages.Pages
         public void OnGet()
         {
             //CurrentTourStop = new TailorMadeTours.Models.TourSource().TourStops.ElementAt(3);
-            CurrentTourStop = new TailorMadeTours.Models.TourSource().TourStops.FirstOrDefault(x=>x.StopNumber);
+            CurrentTourStop = new TailorMadeTours.Models.TourSource().TourStops.FirstOrDefault(x=>x.StopNumber== 3);
         }
         
         

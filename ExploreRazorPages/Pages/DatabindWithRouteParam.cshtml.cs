@@ -13,12 +13,12 @@ namespace ExploreRazorPages.Pages
 		public void OnGet(int stopNumber)
 		{
 			//CurrentTourStop = new TailorMadeTours.Models.TourSource().TourStops.ElementAt(stopNumber - 1);
-			CurrentTourStop = new TailorMadeTours.Models.TourSource().TourStops.FirstOrDefault(x => x.StopNumber);
+			CurrentTourStop = new TailorMadeTours.Models.TourSource().TourStops.FirstOrDefault(x => x.StopNumber== stopNumber);
 		}
 
 		// use TempData property to pass data between pages
-		// Properties marked with TempData
-		// attribute with are stored in encrypted cookie
+		// Properties marked with TempData attribute
+		// are stored in encrypted cookie
 		// When the data is read from the cookie, it is deleted.
 		[TempData]
 		public string Message { get; set; }
