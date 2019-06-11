@@ -12,15 +12,15 @@ namespace ExploreRazorPages.Pages.Binding
 	{
 		// 	Model Binding in Razor Pages is the process that takes values from HTTP requests and maps them to handler method parameters or PageModel properties.
 		//  By default, only values that form part of a POST request are considered for model binding when you use the BindProperty attribute.
-		[BindProperty(SupportsGet =true)]
+		[BindProperty(SupportsGet = true)]
 		public Customer Customer { get; set; }
-		
+
 		public void OnGet([Bind] string FirstName, [Bind]bool IsActive)
 		{
 			// 
 
 			var currentCustomer = Customer;
-			
+
 		}
 	}
 }
