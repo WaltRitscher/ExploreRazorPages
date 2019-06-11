@@ -44,6 +44,11 @@
 
 								@*<div class="dropdown-header text-primary"><div><i class="fa fa-dot-circle"></i><span class="px-2">Data Binding</span></div></div>*@
 
+								<div class="dropdown-header text-primary">Routing Basics</div>
+								<a class="dropdown-item" asp-page="/Privacy">Privacy page in root</a>
+								<a class="dropdown-item" asp-page="/Tours/Sample">Page in Tours Folder</a>
+								<a class="dropdown-item" asp-page="/Tours/Admin/Sample">Page in Tours/Admin Folder</a>
+
 								<div class="dropdown-header text-primary">Data Binding</div>
 								<a class="dropdown-item" href="/DatabindToSingleItem">Databind to Single Item</a>
 								<a class="dropdown-item" href="/AllTourStops">All Tour Stops</a>
@@ -65,7 +70,7 @@
 								<div class="dropdown-header text-primary">Partial Content</div>
 								<a class="dropdown-item" asp-page="/#">Partial Tag Helper</a>
 								@*<a class="dropdown-item" asp-page="">View Components</a>*@
-								
+
 							</div>
 						</li>
 					</ul>
