@@ -24,9 +24,12 @@ namespace ExploreRazorPages.Pages
 				return Page();
 
 			}
+			#region TempData
 			// how do we pass data (message) back to the orginal page?
 			// use a property on the page model
 			Message = $"Tour Stop: '{CurrentTourStop.Name}' was updated!";
+			#endregion
+
 			// Response.Redirect("./Index");
 			return RedirectToPage("DatabindWithRouteParam", new { CurrentTourStop.StopNumber });
 			// similar to RedirectToAction and RedirectToRoute
