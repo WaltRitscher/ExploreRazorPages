@@ -31,7 +31,7 @@ namespace ExploreRazorPages.Pages
 			#endregion
 
 			// Response.Redirect("./Index");
-			return RedirectToPage("DatabindWithRouteParam", new { CurrentTourStop.StopNumber });
+			return RedirectToPage("ShowTourStop", new { CurrentTourStop.StopNumber });
 			// similar to RedirectToAction and RedirectToRoute
 		}
 

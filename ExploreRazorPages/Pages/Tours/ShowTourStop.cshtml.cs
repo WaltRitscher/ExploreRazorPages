@@ -8,7 +8,7 @@ using TailorMadeTours.Models;
 
 namespace ExploreRazorPages.Pages
 {
-	public class DatabindWithRouteParamModel : PageModel
+	public class ShowTourStopModel : PageModel
 	{
 		public void OnGet(int stopNumber)
 		{
